@@ -1,0 +1,67 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+nav {
+    background-color: #444;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.sidebar {
+    background-color: #555;
+    color: white;
+    width: 250px;
+    padding: 10px;
+    position: fixed;
+    top: 223px;
+    left: 0;
+    bottom: 0;
+    position: absolute;
+    z-index: 0;
+}
+
+main {
+    margin-left: 270px;
+    padding: 20px;
+    background-color: #f5f5f5;
+    color: #333; 
+    margin-bottom: 10px;
+    font-size: 18px; 
+    line-height: 1.5;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+button {
+    background-color: #555;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+
+

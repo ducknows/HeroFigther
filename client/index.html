@@ -1,0 +1,69 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dungeon Adventure</title>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+    <script type="module">
+      import { createPlayer, selectPlayer, updateGameInterface, savePlayers } from '/player.js';
+      import { goToRoom, luckTest, pickItem, openChest, goLeft, goRight } from '/gameActions.js';
+      import { updateSidebar, updateMainContent } from '/gameState.js';
+      import { rooms } from '/rooms.js'
+  
+      // Initialize the player list
+      let players = JSON.parse(localStorage.getItem('players')) || [];
+      const playerList = document.getElementById('player-list');
+      const createPlayerButton = document.getElementById('create-player');
+      const gameInterface = document.querySelector('.game-interface');
+      let selectedPlayer = null;
+  
+      // Event listener for creating a new player
+      createPlayerButton.addEventListener('click', () => {
+        const newPlayerName = prompt('Enter a username for the new player:');
+        if (newPlayerName) {
+          createPlayer(newPlayerName);
+        }
+      });
+
+      const goLeftButton = document.querySelector('#goLeftButton');
+      const goRightButton = document.querySelector('#goRightButton');
+
+      goLeftButton.addEventListener('click', goLeft)
+      goRightButton.addEventListener('click', goRight)
+
+    </script>
+    <header>
+        <h1>Welcome to Dungeon Adventure</h1>
+    </header>
+    <nav>
+        <div class="player-selection">
+        <h2>Select a Player or Create a New Player</h2>
+        <ul id="player-list">
+            <!-- Player buttons will be dynamically added here -->
+        </ul>
+        <button id="create-player">Create New Player</button>
+    </div>
+</nav>
+<div class="sidebar">
+    
+</div>
+<main>
+        <div class="game-interface">
+            <!-- Game interface elements will be displayed here -->
+        </div>
+    
+        <h1>Dungeon Room</h1>
+        <p>Welcome to the dark and mysterious dungeon room. You stand at a crossroads.</p>
+        <p>Which way would you like to go?</p>
+        <button id="goLeftButton">Go Left</button>
+        <button id="goRightButton">Go Right</button>
+    </main>
+    <footer>
+       
+    </footer>
+
+</body>
+</html>

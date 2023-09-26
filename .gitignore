@@ -1,0 +1,29 @@
+# Node modules
+node_modules/
+
+# Logs
+*.log
+*.log.*
+npm-debug.log*
+
+# Environment variables
+.env
+
+# Dependency lock files (choose one based on your package manager)
+# Note: Including these files can be a good practice, but they can also be large.
+# Consider your team's needs and workflow.
+# package-lock.json
+# yarn.lock
+
+# Editor-specific files (e.g., .vscode, .idea, .DS_Store)
+.vscode/
+.idea/
+.DS_Store
+
+# Compiled output (e.g., dist, build, out)
+/dist/
+/build/
+/out/
+
+# ESLint cache
+.eslintcache
