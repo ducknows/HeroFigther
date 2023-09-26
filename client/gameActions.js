@@ -1,7 +1,6 @@
 import { rooms } from './rooms.js'
 import { updateSidebar, updateMainContent } from './gameState.js';
 
-let currentRoomIndex = 0;
 export function goToRoom(index) {
     // Check if the index is within the valid range
     if (index >= 0 && index < rooms.length) {
@@ -84,6 +83,7 @@ export function pickItem(itemName) {
 
     export function goLeft() {
         // Update the current room index to go left
+        let currentRoomIndex = window.stateManager.gameState.currentRoomIndex;
         currentRoomIndex = (currentRoomIndex - 1 + rooms.length) % rooms.length;
         updateMainContent();
     }

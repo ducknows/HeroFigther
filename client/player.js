@@ -1,4 +1,6 @@
 // player.js
+import { updateSidebar } from './gameState.js'
+const gameInterface = document.querySelector('.game-interface');
 
 export function createPlayer(username) {
     const newPlayer = {
@@ -18,7 +20,7 @@ export function createPlayer(username) {
     };
   
     // Add the new player to the players array
-    players.push(newPlayer);
+    window.stateManager.gameState.players.push(newPlayer);
     savePlayers();
   
     // Select the newly created player
@@ -26,7 +28,7 @@ export function createPlayer(username) {
   }
   
   export function selectPlayer(player) {
-    selectedPlayer = player;
+    window.stateManager.gameState.selectedPlayer = player;
     updateGameInterface();
   }
   
@@ -35,12 +37,14 @@ export function createPlayer(username) {
     // You can display the selected player's information and game content
     // For example:
     gameInterface.innerHTML = `
-          <h1>Welcome, ${selectedPlayer.username}</h1>
+          <h1>Welcome, ${window.stateManager.gameState.selectedPlayer.username}</h1>
           <!-- Display player stats, inventory, game content, etc. -->
       `;
+      updateSidebar();
+      
   }
   
   export function savePlayers() {
-    localStorage.setItem('players', JSON.stringify(players));
+    localStorage.setItem('players', JSON.stringify(window.stateManager.gameState.players));
   }
   

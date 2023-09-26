@@ -1,14 +1,15 @@
 // shared/game/stateManager.js
 
 export class StateManager {
-  constructor() {
+  constructor(players = [], rooms = [], currentRoomIndex = 0, selectedPlayer= null) {
     this.gameState = {
-      players: [],    // Store player data
-      rooms: [],      // Store room data
+      players,    // Store player data
+      rooms,      // Store room data
+      currentRoomIndex,
+      selectedPlayer
       // Add other game state properties here
     };
   }
-
   // Methods to get and update game state
   getPlayerById(playerId) {
     return this.gameState.players.find((player) => player.id === playerId);

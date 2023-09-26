@@ -12,12 +12,18 @@
       import { goToRoom, luckTest, pickItem, openChest, goLeft, goRight } from '/gameActions.js';
       import { updateSidebar, updateMainContent } from '/gameState.js';
       import { rooms } from '/rooms.js'
-  
-      // Initialize the player list
-      let players = JSON.parse(localStorage.getItem('players')) || [];
+      import { StateManager } from '/shared/game/stateManager.mjs';
+      
+      // Initialize the game state
+      window.stateManager = new StateManager(
+        JSON.parse(localStorage.getItem('players')) || [],
+        rooms,
+        0,
+        null,
+      )
+
       const playerList = document.getElementById('player-list');
       const createPlayerButton = document.getElementById('create-player');
-      const gameInterface = document.querySelector('.game-interface');
       let selectedPlayer = null;
   
       // Event listener for creating a new player
@@ -46,14 +52,14 @@
         </ul>
         <button id="create-player">Create New Player</button>
     </div>
+    <div class="game-interface">
+        <!-- Game interface elements will be displayed here -->
+    </div>
 </nav>
 <div class="sidebar">
     
 </div>
 <main>
-        <div class="game-interface">
-            <!-- Game interface elements will be displayed here -->
-        </div>
     
         <h1>Dungeon Room</h1>
         <p>Welcome to the dark and mysterious dungeon room. You stand at a crossroads.</p>
