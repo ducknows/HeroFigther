@@ -18,12 +18,12 @@ Run `npm install`.
 To run the server:
 
 ```bash
-npm run index.js;
+npm run index.js
 ```
 To run the client:
 
 ```bash
-npm http-server -c-1;
+npm http-server -c-1
 ```
 
 ## Features
