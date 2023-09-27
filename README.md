@@ -5,8 +5,8 @@ A FullStack Text-based RPG
 
 ## Tech Stacks
 - HTML
-- CSS,
-- JavaScript,
+- CSS
+- JavaScript
 - Koa
 - PostgreSQL
 
@@ -18,7 +18,7 @@ Run `npm install`.
 To run the server:
 
 ```bash
-npm run index.js
+npm run index.mjs
 ```
 To run the client:
 
