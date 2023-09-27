@@ -23,7 +23,7 @@ npm run index.js
 To run the client:
 
 ```bash
-npm http-server -c-1
+npx http-server -c-1
 ```
 
 ## Features
