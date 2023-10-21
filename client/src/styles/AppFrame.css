@@ -1,0 +1,114 @@
+/* Style for the entire AppFrame */
+.app-frame {
+    position: relative;
+    border: 21px solid #705039; /* Border color */
+    margin: 0px; /* Adjust margin as needed */
+    border-radius: 5px;
+}
+
+/* Style for the top-left corner */
+.top-left {
+    border-radius: 3px;
+    background-color:#8f8f8f;
+    position: absolute;
+    top: -21px; /* Adjust the positioning */
+    left: -21px; 
+    width: 22px;
+    height: 21px;
+    border-right: 2px solid #553b2a; 
+    border-bottom: 2px solid #553b2a; 
+    border-top: 2px solid #553b2a; 
+    border-left: 2px solid #553b2a; 
+  }
+
+  .top-left .circle {
+    width: 13px;
+    height: 13px;
+    background-color: #fcffd9; /* Circle color */
+    border-radius: 50%; /* Make it circular */
+    position: absolute;
+    top: 2px; /* Adjust the circle's positioning */
+    left: 2px; /* Adjust the circle's positioning */
+    z-index: 0;
+    border: 2px solid #2c2a2a;
+  }
+
+  
+  
+  /* Style for the top-right corner */
+  .top-right {
+    border-radius: 3px;
+    background-color:#8f8f8f;
+    position: absolute;
+    top: -21px; /* Adjust the positioning */
+    right: -21px; /* Adjust the positioning */
+    width: 22px;
+    height: 22px;
+    border-right: 2px solid #553b2a; 
+    border-bottom: 2px solid #553b2a; 
+    border-top: 2px solid #553b2a; 
+    border-left: 2px solid #553b2a; 
+  }
+  .top-right .circle {
+    width: 13px;
+    height: 13px;
+    background-color: #fcffd9; /* Circle color */
+    border-radius: 50%; /* Make it circular */
+    position: absolute;
+    top: 2px; /* Adjust the circle's positioning */
+    left: 2px; /* Adjust the circle's positioning */
+    z-index: 0;
+    border: 2px solid #222020;
+  }
+  /* Style for the bottom-left corner */
+  .bottom-left {
+    border-radius: 3px;
+    background-color:#8f8f8f;
+    position: absolute;
+    bottom: -21px; /* Adjust the positioning */
+    left: -21px; /* Adjust the positioning */
+    width: 23px;
+    height: 23px;
+    border-right: 2px solid #553b2a; 
+    border-top: 2px solid #553b2a; 
+    border-bottom: 2px solid #553b2a; 
+    border-left: 2px solid #553b2a; 
+  }
+  .bottom-left .circle {
+    width: 13px;
+    height: 13px;
+    background-color: #fcffd9; /* Circle color */
+    border-radius: 50%; /* Make it circular */
+    position: absolute;
+    top: 3px; /* Adjust the circle's positioning */
+    left: 3px; /* Adjust the circle's positioning */
+    z-index: 0;
+    border: 2px solid #222020;
+  }
+  
+  /* Style for the bottom-right corner */
+  .bottom-right {
+    border-radius: 3px;
+    background-color:#8f8f8f;
+    position: absolute;
+    bottom: -21px; /* Adjust the positioning */
+    right: -21px; /* Adjust the positioning */
+    width: 22px;
+    height: 22px;
+    border-right: 2px solid #553b2a; 
+    border-top: 2px solid #553b2a; 
+    border-bottom: 2px solid #553b2a; 
+    border-left: 2px solid #553b2a; 
+  }
+  .bottom-right .circle {
+    width: 13px;
+    height: 13px;
+    background-color: #fcffd9; /* Circle color */
+    border-radius: 50%; /* Make it circular */
+    position: absolute;
+    top: 2px; /* Adjust the circle's positioning */
+    left: 2px; /* Adjust the circle's positioning */
+    z-index: 0;
+    border: 2px solid #1f1c1c;
+  }
+

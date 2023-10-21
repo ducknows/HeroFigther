@@ -1,0 +1,106 @@
+.hero {
+    position: absolute;
+    background-color: #fad796; /* Brown background color for the header */
+    padding: 3px;
+    border-radius: 2px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow for the section */
+    font-family: 'MedievalFont', sans-serif; 
+    margin: 20px 50px 50px 150px;
+    position: absolute;
+    z-index: 2;
+    width: 60%;
+    left: 200px;
+    height: 800px;
+  }
+  
+  .hero-header {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff; /* Text color for the header */
+    background-color: rgb(146, 88, 70);
+    padding: 10px;
+    border-radius: 2px;
+    text-align: center;
+  }
+  
+  .room-info {
+    margin-top: 20px; /* Spacing below the header */
+  }
+  
+  .current-room {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .room-options {
+    margin-top: 10px; /* Spacing between room info and options */
+  }
+  
+  .option-text {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .option-button {
+    display: block;
+    background-color: #dbc4b6;
+    border: none;
+    border-radius: 2px;
+    padding: 5px 10px;
+    margin-top: 5px;
+    cursor: pointer;
+  }
+  
+  .main-section {
+    margin-top: 20px; /* Spacing below room info or options */
+    /* Add additional styling for the main content as needed */
+  }
+  
+  .room-dungeon {
+    /* Existing styles */
+    font-size: 18px; /* Increase font size slightly for readability */
+  }
+  
+  /* Styles for path links */
+  .path-links {
+    list-style: none;
+    padding: 0;
+
+    gap: 10px;
+  }
+  
+  .path-links li {
+    color: #e70e0e; /* Default text color for available paths */
+  }
+  
+  .path-links .unavailable {
+    color: #ccc; /* Gray text color for unavailable paths */
+    pointer-events: none; /* Make unavailable links unclickable */
+  }
+
+  .top-header {
+  border-radius: 3px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 1px; /* Increase spacing below the title */
+  background-color: rgb(146, 88, 70);
+  padding: 4px;
+  text-align: left; /* Center the title text */
+  height: 38px;
+  }
+
+  .bottom-hero {
+    position: absolute;
+    bottom: 0;
+    width: 1080px;
+    border-radius: 3px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 1px; /* Increase spacing below the title */
+    background-color: rgb(146, 88, 70);
+    padding: 4px;
+    text-align: left; /* Center the title text */
+    height: 33px;
+  }

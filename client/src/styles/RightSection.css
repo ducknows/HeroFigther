@@ -1,0 +1,217 @@
+/* RightSection.css */
+
+.right-section {
+  position: absolute;
+  background-color: #fad796; /* Brown background color for the header */
+  padding: 4px;
+  border-radius: 3px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow for the section */
+  z-index: 2;
+  grid-area: right; /* Place in the 'right' grid area */
+  height: 800px; /* Adjust the height to occupy the whole container */
+  width: 320px; /* Adjust the width as needed */
+  right: 20px;
+  top: 68px;
+  display: flex;
+  flex-direction: column;
+}
+
+.top-status {
+  padding: 4px;
+  border-bottom: 1px solid #000; /* Add a border between top and grid */
+}
+
+.player-box,
+.item-box,
+.resources-box,
+.dice-roll-box {
+  border: 1px solid #000; /* Add borders to each box */
+  border-radius: 5px;
+  padding: 5px;
+  background-color: #ffebc5; /* Light brown background color */
+  margin-bottom: 10px; /* Add margin between boxes */
+}
+
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.top-right-header {
+  background-color: rgb(146, 88, 70); /* Box color */
+  padding: 6px; /* Padding to create spacing */
+  border-radius: 3px;
+  margin-top: 1px; /* Spacing between the creatures and the bottom header */
+  height: 38px;
+  width: 310px;
+}
+
+/* Individual box styles */
+.player-box {
+  position: absolute;
+  top: 50px;
+  left: 8px;
+  width: 305px;
+  height: 80px;
+  flex: 0; /* Player box does not take up extra space */
+  margin-bottom: 10px; /* Add space between Player and Item box */
+}
+
+.item-box {
+  position: absolute;
+  top: 140px;
+  left: 8px;
+  height:400px;
+  width: 148px;
+}
+
+.resources-box {
+  position: absolute;
+  right: 5px;
+  top: 140px;
+  height:400px;
+  width: 148px;
+}
+
+.dice-roll-box {
+  position: absolute;
+  bottom: 40px;
+  left: 7px;
+  width: 308px;
+  height: 200px;
+  flex: 1; /* Dice Roll box occupies remaining space */
+}
+
+.player-stats {
+  position: absolute;
+  left: 0px;
+  bottom: 28px;
+  padding: 6px; /* Padding to create spacing */
+  border-radius: 3px;
+  margin-top: 0px; /* Spacing between the creatures and the bottom header */
+  height: 28px;
+  width: 304px;
+  
+}
+
+.player-status {
+  position: absolute;
+  left: 0px;
+  bottom: 50px;
+  background-color: rgb(146, 88, 70); /* Box color */
+  padding: 6px; /* Padding to create spacing */
+  border-radius: 3px;
+  margin-top: 0px; /* Spacing between the creatures and the bottom header */
+  height: 28px;
+  width: 304px;
+  color:#fff;
+}
+.item-fringe {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  background-color: rgb(146, 88, 70); /* Box color */
+  padding: 6px; /* Padding to create spacing */
+  border-radius: 3px;
+  margin-top: 0px; /* Spacing between the creatures and the bottom header */
+  height: 28px;
+  width: 147px;
+  color: #fff;
+  text-align: left;
+}
+.item-fringe-bottom {
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  background-color: rgb(146, 88, 70); /* Box color */
+  padding: 6px; /* Padding to create spacing */
+  border-radius: 3px;
+  margin-top: 0px; /* Spacing between the creatures and the bottom header */
+  height: 28px;
+  width: 147px;
+  color: #fff;
+  text-align: left;
+}
+
+.resources-box-start {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  background-color: rgb(146, 88, 70); /* Box color */
+  padding: 6px; /* Padding to create spacing */
+  border-radius: 3px;
+  margin-top: 0px; /* Spacing between the creatures and the bottom header */
+  height: 28px;
+  width: 147px;
+  color: #fff;
+  text-align: left;
+}
+
+.resources-box-end {
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  background-color: rgb(146, 88, 70); /* Box color */
+  padding: 6px; /* Padding to create spacing */
+  border-radius: 3px;
+  margin-top: 0px; /* Spacing between the creatures and the bottom header */
+  height: 28px;
+  width: 147px;
+  color: #fff;
+  text-align: left;
+}
+
+.dice-roll-start {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  background-color: rgb(146, 88, 70); /* Box color */
+  padding: 6px; /* Padding to create spacing */
+  border-radius: 3px;
+  margin-top: 0px; /* Spacing between the creatures and the bottom header */
+  height: 28px;
+  width: 307px;
+  color: #fff;
+  text-align: left;
+}
+
+.dice-roll-end {
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  background-color: rgb(146, 88, 70); /* Box color */
+  padding: 6px; /* Padding to create spacing */
+  border-radius: 3px;
+  margin-top: 0px; /* Spacing between the creatures and the bottom header */
+  height: 28px;
+  width: 307px;
+  color: #fff;
+  text-align: left;
+}
+
+
+
+.items-position {
+  position: absolute;
+  left: 0px;
+  top: 25px;
+  padding: 6px; /* Padding to create spacing */
+  border-radius: 3px;
+  margin-top: 0px; /* Spacing between the creatures and the bottom header */
+  height: 28px;
+  width: 147px;
+}
+
+
+.bottom-status {
+  position: absolute;
+  bottom: 4px;
+  background-color: rgb(146, 88, 70); /* Box color */
+  padding: 6px; /* Padding to create spacing */
+  border-radius: 3px;
+  margin-top: 1px; /* Spacing between the creatures and the bottom header */
+  height: 38px;
+  width: 312px;
+}

@@ -1,0 +1,65 @@
+/* global.css */
+
+/* Set a consistent font family for the entire app */
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Apply a base font size and line height */
+body, h1, h2, h3, h4, h5, h6, p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* Set a consistent text color for the entire app */
+body {
+  color: #333;
+}
+
+/* Apply a background color to the entire app */
+body {
+  background-color: #fff;
+}
+
+/* Add padding to all elements to ensure spacing */
+body, div, section, header, footer {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Set a consistent border box for all elements */
+* {
+  box-sizing: border-box;
+}
+
+/* Define a global link style */
+
+
+a:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
+/* Add spacing between elements */
+.space-between {
+  margin-bottom: 20px;
+}
+
+.main-content {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
+  max-width: 1200px; /* Limit the maximum width of the content */
+  margin: 0 auto; /* Center the content horizontally */
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #f0f0f0;
+}
+
+
