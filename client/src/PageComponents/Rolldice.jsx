@@ -1,30 +1,29 @@
-import React, { useEffect } from 'react';
-import '../styles/Rolldice.css'
+import React, { useEffect, useState } from 'react';
+import '../styles/Rolldice.css';
 
 const RollDiceComponent = () => {
+  const [diceValues, setDiceValues] = useState([1, 1]);
+
   useEffect(() => {
-    // This function will be called when the component mounts.
-    // You can place your provided JavaScript code here.
-
-    // Select elements
-    const dice = document.getElementById("dice");
-    const rollSound = document.getElementById("roll-sound");
-
-    // Function to roll the dice
     const rollDice = () => {
-      dice.innerHTML = Math.floor(Math.random() * (6 - 1 + 1) + 1);
-      dice.style.animation = "roll 0.2s linear";
-      dice.addEventListener("animationend", function () {
-        dice.style.animation = "none";
-      });
-      rollSound.play();
+      const newValues = [
+        Math.floor(Math.random() * 6) + 1,
+        Math.floor(Math.random() * 6) + 1
+      ];
+      setDiceValues(newValues);
+      playRollSound();
     };
 
-    // Attach the rollDice function to the button's click event
+    const playRollSound = () => {
+      const rollSound = document.getElementById("roll-sound");
+      if (rollSound) {
+        rollSound.play();
+      }
+    };
+
     const rollButton = document.getElementById("roll-button");
     rollButton.addEventListener("click", rollDice);
 
-    // Clean up event listener when the component unmounts
     return () => {
       rollButton.removeEventListener("click", rollDice);
     };
@@ -32,8 +31,10 @@ const RollDiceComponent = () => {
 
   return (
     <div id="container">
-      <div id="dice">?</div>
-     
+      <div className="dice-container">
+        <div className="dice">{diceValues[0]}</div>
+        <div className="dice">{diceValues[1]}</div>
+      </div>
       <button id="roll-button">Roll</button>
       <audio id="roll-sound" src="https://freesound.org/data/previews/265/265115_4373976-lq.mp3"></audio>
     </div>

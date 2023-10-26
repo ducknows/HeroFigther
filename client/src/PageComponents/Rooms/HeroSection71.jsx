@@ -6,8 +6,8 @@ function Hero() {
 
   const availablePaths = {
  
-    east: { number: 278, available: true },
-    west: { number: 71, available: true },
+    east: { number: 301, available: true },
+    west: { number: 248, available: true },
   };
 
   const renderPathLinks = () => {

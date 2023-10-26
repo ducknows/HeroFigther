@@ -5,7 +5,6 @@ function Hero() {
   const hasOptions = false;
 
   const availablePaths = {
- 
     east: { number: 278, available: true },
     west: { number: 71, available: true },
   };
