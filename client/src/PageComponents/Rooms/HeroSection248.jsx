@@ -52,7 +52,8 @@ function Hero() {
         <div className="current-room"></div>
         <div className="room-dungeon">
           <p>
-            There is a right-hand turn to the north in the passage. Cautiously you approach a sentry post on the corner and, as you look in, you can see a strange Goblin-like creature in leather armor asleep at his post. You try to tiptoe past him. Test your Luck. If you are Lucky, he does not wake up and remains snoring loudly - turn to 301. If you are Unlucky, you step with a crunch on some loose ground and his eyes flick open - turn to 248.
+          The creature that has just awakened is an ORC! He scrambles to his feet and turns to grasp at a rope which is probably the alarm bell. You must attack him quickly.
+ORC SKILL 6 STAMINA 5
           </p>
           {hasOptions && (
             <div className="room-options">
